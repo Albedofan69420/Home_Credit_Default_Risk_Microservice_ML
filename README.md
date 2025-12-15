@@ -1,0 +1,2 @@
+# Home_Credit_Default_Risk_Microservice_ML
+Este repositorio tiene como propósito almacenar cada una de las etapas de realización de una Maquina Predictiva a través de microservicios, siguiendo el orden estipulado por CRISP-DM. Todo esto se realizará en base al dataset de Home Credit Default Risk, el cual posee información variada sobre sus clientes influyente en sus capacidades para solicitar créditos.
