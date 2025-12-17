@@ -9,39 +9,32 @@ Inicialmente, este proyecto fue realizado a través de la plataforma de Google D
 
 Todo esto fue transformado de tal forma en la que se dividieron los elementos en 6 etapas diferentes basadas en las de la metodología de CRISP-DM, siguiendo un estílo arquitectónico de microservicios para la creación de una API capaz de utilizar el modelo generado con simplicidad a través de streamlit.
 
-# Instrucciones de instalación
+# Instrucciones de instalación y ejecución
+El proyecto debe ser descargado en formato .ZIP, por lo que se requieren de herramientas de extracción tales como WinRAR, 7-Zip o similares para poder trabajarlo y ejecutarlo. Al descargarse, este puede descomprimirse en cualquier carpeta deseada, obteniendose como resultado una carpeta llamada ```project_root```. Al abrirse se visualizarán variadas carpetas en las que se divide el proyecto en formato .py, basada en la estructura de microservicios y un archivo txt llamado.
 
+Para la instalación de las dependencias necesarias para ejecutar el código, se debe abrir la carpeta ```project_root``` dentro del terminal CMD y ejecutar el siguiente código dentro de la ventana del terminal:
+
+  ```python -m pip install -r requirements.txt```
+
+Puede que la instalación de dependencias requiera de mayor tiempo de espera en equipos de bajo rendimiento. En caso de que la instalación tome demasiado tiempo se recomienda reabrir una ventana de CMD en la carpeta de ```project_root``` y ejecutar nuevamente el código indicado arriba. Se verificarán las intalaciones anteriores y realizará aquellas que no fueron ejecutadas antes.
+
+Tras finalizar la instalación de dependencias, se procederá con la visualización del modelo realizado a través de Streamlit. Para ello, se debe ejecutar el siguiente código en la ventana de CMD abierta con anterioridad:
+
+  ```python -m streamlit run 05_deployment/app.py```
+
+# Instrucciones de uso
+Luego de ejecutar el código, se abrirá una ventana en el navegador con el modelo visualizado a través de Streamlit. A partir de esta etapa se podrá agregar información sobre el cliente como lo son sus ingresos o edad. Para que funcione correctamente deben rellenarse todas los cuadros con la información necesaria. Finalmente, podrá hacer click en el botón ```Calcular cluster``` para realizar el calculo final y demostrar las capacidades financieras del cliente ingresado.
 
 # Datos utilizados
 
-Dataset principal: application_train.csv
-
-### Variables seleccionadas fueron:
+### Las variables seleccionadas fueron:
 
 - AMT_INCOME_TOTAL
 - AMT_CREDIT
 - AMT_ANNUITY
 - AGE
 - YEARS_EMPLOYED
-- 
-Nota: Se priorizó el uso de la tabla principal para mantener un flujo controlado y evitar data leakage. El proyecto fue diseñado de forma modular para permitir la incorporación futura de tablas secundarias.
 
-# Despliegue
+Se priorizó el uso de estas variables debido a 
 
-El modelo fue desplegado usando streamlit, los pasos para poder instalar todo correctamente son:
-
-- Ejecutar el siguiente codigo en cmd dentro de la carpeta "project_root":
-  
-  ```python -m pip install -r requirements.txt```
-
-- Esto nos servira para instalar las dependencias del proyecto. Una vez se instalen las dependencias, deberemos instalar StreamLit para poder ver de forma visual como se maneja este proyecto, se instala ocupando el siguiente comando: 
-
-  ```python -m pythonpip install streamlit```
-
-- Finalmente cuando se instale StreamLit, ejecutaremos el proyecto con el siguiente codigo
-
-  ```python -m streamlit run 05_deployment/app.py```
-
-
-
-Proyecto desarrollado para fines académicos como parte de un examen de Machine Learning.
+Proyecto desarrollado con fines académicos.
