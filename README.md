@@ -23,7 +23,13 @@ Tras finalizar la instalación de dependencias, se procederá con la visualizaci
   ```python -m streamlit run 05_deployment/app.py```
 
 # Instrucciones de uso
-Luego de ejecutar el código, se abrirá una ventana en el navegador con el modelo visualizado a través de Streamlit. A partir de esta etapa se podrá agregar información sobre el cliente como lo son sus ingresos o edad. Para que funcione correctamente deben rellenarse todas los cuadros con la información necesaria. Finalmente, podrá hacer click en el botón ```Calcular cluster``` para realizar el calculo final y demostrar las capacidades financieras del cliente ingresado.
+Luego de ejecutar el código, se abrirá una ventana en el navegador con el modelo visualizado a través de Streamlit. A partir de esta etapa se podrá seleccionar clientes incluidos dentro del set de solicitantes y consultar sobre sus capacidades de pagar los préstamos solicitados.
+
+<img width="1914" height="838" alt="image" src="https://github.com/user-attachments/assets/64aee2c8-8892-4fde-aaaa-2091d36a72bf" />
+
+En casos en los que no se posea información suficiente sobre los solicitantes o en los que ocurran errores con la información, se mostrará un mensaje en pantalla indicando el error.
+
+<img width="1916" height="833" alt="image" src="https://github.com/user-attachments/assets/4a627a5b-9474-4286-80d2-c5d5c5928da1" />
 
 # Datos utilizados
 
@@ -34,7 +40,31 @@ Luego de ejecutar el código, se abrirá una ventana en el navegador con el mode
 - AMT_ANNUITY
 - AGE
 - YEARS_EMPLOYED
+- BUREAU_CREDIT_MEAN
+- BUREAU_CREDIT_SUM
+- BUREAU_DAYS_CREDIT_MEAN
+- BUREAU_MAX_OVERDUE
+- BB_MONTHS_COUNT_MEAN
+- BB_STATUS_MEAN
+- BB_MAX_STATUS
+- BB_HAS_OVERDUE
+- PREV_APP_COUNT
+- PREV_APP_AMT_CREDIT_MEAN
+- PREV_APP_REFUSED_RATIO
+- PREV_APP_DAYS_DECISION_MEAN
+- POS_MONTHS_COUNT
+- POS_DPD_MEAN
+- POS_DPD_MAX
+- INST_PAYMENT_RATIO_MEAN
+- INST_DPD_MEAN
+- INST_DPD_MAX
+- CC_BALANCE_MEAN
+- CC_LIMIT_MEAN
+- CC_UTILIZATION_MEAN
+- CC_DPD_MEAN
 
-Se priorizó el uso de estas variables debido a 
+Se priorizó el uso de estas variables debido a su gran capacidad descriptiva sobre los usuarios de Home Credit y sus capacidades financieras. Basandose en edad, estabilidad laboral, ingresos e historial crediticio (en conjunto con sus capacidades para pagar los prestamos en los tiempos designados) se logra obtener información necesaria para comprender los comportamientos de los clientes y segmentarlos basandose en caracteristicas similares encontradas entre todas las personas identificadas dentro de los datasets.
+
+# Análisis e interpretación de resultados
 
 Proyecto desarrollado con fines académicos.
