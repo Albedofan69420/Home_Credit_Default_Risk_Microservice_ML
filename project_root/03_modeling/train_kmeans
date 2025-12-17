@@ -26,8 +26,8 @@ def main():
 
     plt.figure(figsize=(7, 4))
     plt.plot(K_range, inertia_values, marker="o")
-    plt.title("Método del Codo (Training Set)")
-    plt.xlabel("Número de Clusters (k)")
+    plt.title("Método del Codo")
+    plt.xlabel("Número de Clusters k")
     plt.ylabel("Inercia")
     plt.grid(True)
     plt.tight_layout()
