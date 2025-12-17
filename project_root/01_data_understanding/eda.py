@@ -1,6 +1,7 @@
 import pandas as pd
 
 DATA_PATH = "data/application_train.csv"
+BUEAU = "data/bureau.csv"
 
 def main():
     df = pd.read_csv(DATA_PATH)

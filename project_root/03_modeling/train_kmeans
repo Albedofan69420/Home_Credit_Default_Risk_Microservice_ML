@@ -8,9 +8,9 @@ ARTIFACTS_PATH = "artifacts/"
 
 def main():
 
-    df_scaled = pd.read_csv(ARTIFACTS_PATH + "df_scaled.csv")
+
     X_train = pd.read_csv(ARTIFACTS_PATH + "X_train_scaled.csv")
-  
+    
     K_range = range(2, 11)
     inertia_values = []
 
