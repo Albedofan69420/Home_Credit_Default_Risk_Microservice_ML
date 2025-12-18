@@ -31,6 +31,23 @@ En casos en los que no se posea información suficiente sobre los solicitantes o
 
 <img width="1916" height="833" alt="image" src="https://github.com/user-attachments/assets/4a627a5b-9474-4286-80d2-c5d5c5928da1" />
 
+### Análisis e interpretación de resultados
+A la hora de comnsultar sobre los solicitantes y su información, estos pueden ser divididos en 4 secciones diferentes:
+
+#### Clientes con alta capacidad financiera y buen historial
+Solicitantes con bajo riesgo de incumplimiento, con alta capacidad financiera y un historial crediticio favorable.
+
+#### Clientes con alto uso de crédito y mayor exposición al riesgo
+Solicitantes con mayor nivel de riesgo crediticio, asociados a un uso intensivo del crédito y mayor probabilidad de incumplimiento.
+
+#### Clientes con ingresos medios y comportamiento crediticio estable
+Solicitantes con riesgo crediticio moderado, con ingresos estables y un historial de pago generalmente confiable.
+
+#### Clientes con perfil financiero conservador y bajo endeudamiento
+Solicitantes con bajo nivel de riesgo crediticio, caracterizados por un bajo nivel de endeudamiento y comportamiento financiero conservador.
+
+Cabe destacar que la aceptación de las solicitudes de préstamos se está sujeto a criterio humano, por lo que este puede diferir basado en diferentes experiencias y personas, no definiendose como una herramienta objetiva capaz de determinar con certeza las capacidades de cada cliente del ente financiero de Home Credit.
+
 # Datos utilizados
 
 ### Las variables seleccionadas fueron:
@@ -65,6 +82,6 @@ En casos en los que no se posea información suficiente sobre los solicitantes o
 
 Se priorizó el uso de estas variables debido a su gran capacidad descriptiva sobre los usuarios de Home Credit y sus capacidades financieras. Basandose en edad, estabilidad laboral, ingresos e historial crediticio (en conjunto con sus capacidades para pagar los prestamos en los tiempos designados) se logra obtener información necesaria para comprender los comportamientos de los clientes y segmentarlos basandose en caracteristicas similares encontradas entre todas las personas identificadas dentro de los datasets.
 
-# Análisis e interpretación de resultados
+Proyecto creado con fines académicos.
 
 Proyecto desarrollado con fines académicos.
