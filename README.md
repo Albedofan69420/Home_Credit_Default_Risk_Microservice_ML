@@ -32,25 +32,21 @@ En casos en los que no se posea información suficiente sobre los solicitantes o
 <img width="1916" height="833" alt="image" src="https://github.com/user-attachments/assets/4a627a5b-9474-4286-80d2-c5d5c5928da1" />
 
 ## Análisis e interpretación de resultados
-A la hora de comnsultar sobre los solicitantes y su información, estos pueden ser divididos en 4 secciones diferentes:
+A la hora de consultar sobre los solicitantes y su información, estos pueden ser divididos en 4 secciones diferentes:
 
-### Clientes con alta capacidad financiera y buen historial
-Solicitantes con bajo riesgo de incumplimiento, con alta capacidad financiera y un historial crediticio favorable.
+- Clientes con alta capacidad financiera y buen historial: Solicitantes con bajo riesgo de incumplimiento, con alta capacidad financiera y un historial crediticio favorable.
 
-### Clientes con alto uso de crédito y mayor exposición al riesgo
-Solicitantes con mayor nivel de riesgo crediticio, asociados a un uso intensivo del crédito y mayor probabilidad de incumplimiento.
+- Clientes con alto uso de crédito y mayor exposición al riesgo: Solicitantes con mayor nivel de riesgo crediticio, asociados a un uso intensivo del crédito y mayor probabilidad de incumplimiento.
 
-### Clientes con ingresos medios y comportamiento crediticio estable
-Solicitantes con riesgo crediticio moderado, con ingresos estables y un historial de pago generalmente confiable.
+- Clientes con ingresos medios y comportamiento crediticio estable: Solicitantes con riesgo crediticio moderado, con ingresos estables y un historial de pago generalmente confiable.
 
-### Clientes con perfil financiero conservador y bajo endeudamiento
-Solicitantes con bajo nivel de riesgo crediticio, caracterizados por un bajo nivel de endeudamiento y comportamiento financiero conservador.
+- Clientes con perfil financiero conservador y bajo endeudamiento: Solicitantes con bajo nivel de riesgo crediticio, caracterizados por un bajo nivel de endeudamiento y comportamiento financiero conservador.
 
 Cabe destacar que la aceptación de las solicitudes de préstamos se está sujeto a criterio humano, por lo que este puede diferir basado en diferentes experiencias y personas, no definiendose como una herramienta objetiva capaz de determinar con certeza las capacidades de cada cliente del ente financiero de Home Credit.
 
 # Datos utilizados
 
-### Las variables seleccionadas fueron:
+### Las variables seleccionadas fueron las siguientes:
 
 - AMT_INCOME_TOTAL
 - AMT_CREDIT
@@ -81,5 +77,20 @@ Cabe destacar que la aceptación de las solicitudes de préstamos se está sujet
 - CC_DPD_MEAN
 
 Se priorizó el uso de estas variables debido a su gran capacidad descriptiva sobre los usuarios de Home Credit y sus capacidades financieras. Basandose en edad, estabilidad laboral, ingresos e historial crediticio (en conjunto con sus capacidades para pagar los prestamos en los tiempos designados) se logra obtener información necesaria para comprender los comportamientos de los clientes y segmentarlos basandose en caracteristicas similares encontradas entre todas las personas identificadas dentro de los datasets.
+
+#Aplicación de CRISP-DM y flujo de trabajo
+Para el correcto desarrollo del proyecto, se siguieron las 6 etapas necesarias de la metodología de CRISP-DM.
+
+- Comprensión del negocio: Se analiza el negocio de Home Credit, una entidad financiera que se enfoca en la entrega de préstamos a aquellas personas que poseen poco o nulo historial crediticio. Se comprende el riesgo de entregar préstamos a personas que no pueden cumplir con los plazos especificados y se plantea la necesidad de segmentar a los clientes analizando sus características.
+
+- Comprensión de los datos: Se trabaja con todos los parquet prestados por Home Credit, los cuales contienen información sobre sus solicitantes de préstamos, solicitudes hechas en diferentes entidades e información crediticia. Tras realizar un análisis de la información se comprende la presencia de nulos y una gran cantidad de columnas que no necesariamente deban incluirse al proyecto final, queriendo evitar problemas dimensionales y seleccionando las mejores variables para trabajar.
+
+- Preparación de datos: Se transforman datos contenidos dentro de diferentes columnas para un mayor entendimiento. Se imputan valores y escalan. Es reducida la dimensionalidad para trabajar con variables consideradas importantes a la hora de definir si se acepta o no un préstamo. Finalmente, se tratan outliers para evitar el desplazo de categorías por clientes inusuales.
+
+- Modelamiento: A partir de los datos seleccionados, se dividen los datos en train y test para evitar el data leakage. Se realiza el modelo con K-Means, donde se determinó la cantidad final de clusters gracias a la utilización del método del codo para su elección.
+
+- Evaluación: Análisis de clusters a partir de la visualización con PCA, se realiza análisis de la variable TARGET y se identifican las caracteristicas principales de cada uno de los segmentos de clientes generados.
+
+- Despliegue: Realización de una aplicación interactiva a partir de Streamlit. Se aplican correcciones en el código para evitar errores en la presentación visual de los resultados del modelo.
 
 Proyecto desarrollado con fines académicos.
