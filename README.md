@@ -78,7 +78,7 @@ Cabe destacar que la aceptación de las solicitudes de préstamos se está sujet
 
 Se priorizó el uso de estas variables debido a su gran capacidad descriptiva sobre los usuarios de Home Credit y sus capacidades financieras. Basandose en edad, estabilidad laboral, ingresos e historial crediticio (en conjunto con sus capacidades para pagar los prestamos en los tiempos designados) se logra obtener información necesaria para comprender los comportamientos de los clientes y segmentarlos basandose en caracteristicas similares encontradas entre todas las personas identificadas dentro de los datasets.
 
-#Aplicación de CRISP-DM y flujo de trabajo
+# Aplicación de CRISP-DM y flujo de trabajo
 Para el correcto desarrollo del proyecto, se siguieron las 6 etapas necesarias de la metodología de CRISP-DM.
 
 - Comprensión del negocio: Se analiza el negocio de Home Credit, una entidad financiera que se enfoca en la entrega de préstamos a aquellas personas que poseen poco o nulo historial crediticio. Se comprende el riesgo de entregar préstamos a personas que no pueden cumplir con los plazos especificados y se plantea la necesidad de segmentar a los clientes analizando sus características.
